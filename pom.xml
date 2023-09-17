@@ -12,8 +12,12 @@
 	<groupId>ru.codesquad</groupId>
 	<artifactId>breedersbook</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<name>breedersbook</name>
+	<modules>
+		<module>telegram-bot</module>
+	</modules>
 
 	<properties>
 		<java.version>11</java.version>
@@ -29,6 +33,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
 	</dependencies>
 
